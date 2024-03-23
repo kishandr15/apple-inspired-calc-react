@@ -1,0 +1,53 @@
+
+:root {
+  --LightGray: #D4D4D2;
+  --Black: #1C1C1C;
+  --DarkGray: #505050;
+  --VividOrange: #FF9500;
+}
+
+.calculator {
+  width: 275px;
+  margin: 50px auto;
+  background-color: var(--LightGray);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.display {
+  background-color: var(--DarkGray);
+  color: white;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  background-color: var(--Black);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--VividOrange);
+}
+
+.double-button-size {
+  grid-column: span 2; /* This makes the button span across two columns */
+}
+
+.vivid-orange {
+  background-color: var(--VividOrange);
+}
